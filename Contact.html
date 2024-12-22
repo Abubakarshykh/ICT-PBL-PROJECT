@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send" />
+</head>
+<body class="font-sans bg-gray-50">
+    <div id="navbar"></div>
+    
+    <div class="relative w-full h-auto">
+    
+        <img src="https://www.shutterstock.com/image-photo/group-colleagues-engaging-discussion-during-600nw-2461746317.jpg" class="w-full h-80">
+        <div class="absolute inset-0 bg-teal-800 opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white"><p class="text-xl"><b>Contact Us</b></p></div>
+    
+    </div>
+    <div class="container mx-auto flex flex-wrap py-12 px-6">
+        <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+            <h2 class="text-2xl font-bold mb-6">Get in Touch</h2>
+            <form class="space-y-4">
+                <textarea name="message" id="message" placeholder="Enter Message" rows="5" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"></textarea>
+                <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300">
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300">
+                <input type="text" id="subject" name="subject" placeholder="Enter Subject" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300">
+                <button class="bg-[#0e7e8f] text-white px-6 py-2 rounded hover:text-[#74c7d4]">Send</button>
+            </form>
+        </div>
+        <div class="w-full lg:w-1/2 py-20 pl-52">
+            <p class="mb-6"> <img src=assets/home.png class="w-10 h-10">Buttonwood, California <br> Rosemead, CA1236</p>
+            <p class="mb-6"><img src=assets/phone.png class="w-10 h-10">+1 253 768 3620 <br> Mon to Fri 9am to 6pm</p>
+            <p><img src=assets/email.png class="w-10 h-10">support@business.com <br> Send us your query anytime!</p>
+        </div>
+    </div>
+    <footer class="flex justify-between items-center p-6 bg-white-200 border-t border-white-300">
+        <div class="container mx-auto flex flex-wrap py-12 px-6">
+            <div class="grid"  >
+        <div class="w-1/2 text-left">
+            <p class="text-gray-700">
+                Thank you for visiting our website! We hope you found what you were looking for. Stay connected with us through our social media channels for the latest updates and news.
+            </p>
+            <padding class=""> </padding>
+        </div>
+       <div class="py-10" >
+            <button class="bg-[#0e7e8f] text-white px-6 py-2 rounded hover:text-[#74c7d4]"> <a href="https://www.instagram.com" target="_blank" >
+                Instagram </a></button>
+                <button class="bg-[#0e7e8f] text-white px-6 py-2 rounded hover:text-[#74c7d4]"><a href="https://www.facebook.com" target="_blank" >
+                Facebook </a> </button>
+        </div>
+        </div>
+    </div>
+
+        <div class="w-full ">
+            <div class="container mx-auto flex flex-wrap py-12 px-6">
+                <div class="w-1/2 text-left">
+            <p class="text-gray-700" class="mb-6"><img src=assets/navigation.png class="w-10 h-10"> <b>Location</b><br> 123 Main St, Anytown, USA</p>
+            </div>
+            <div class="w-1/2 ">
+            <p class="text-gray-700"  class="mb-6"><img src=assets/phone.png   class="w-10 h-10"><b>Contact</b><br> +1 253 565 2365<br> support@colorlib.com</p>
+        </div> 
+    </div>
+    </div>
+    </footer>
+
+    <script>
+                fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle?.addEventListener('click', () => {
+            navMenu?.classList.toggle('hidden');
+        });
+    </script>
+    
+</body>
+</html>
