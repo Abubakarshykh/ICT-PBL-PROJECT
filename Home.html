@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <title>Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send" />
+    <style>
+        #default-carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
+
 <body>
     <header class="bg-white border-b shadow-sm">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
@@ -80,8 +88,382 @@
     </nav>
 
 
+   <!-- Carousel Section -->
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel Wrapper -->
+    <div class="relative h-72 md:h-[500px] overflow-hidden">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/owl_1.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/owl_2.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
 
+    <!-- Slider Indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    </div>
+
+    <!-- Slider Controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
+
+<!-- Main Features section -->
+<section class="flex flex-col md:flex-row items-stretch gap-8 px-[6rem] py-8">
+    <!-- Section 1 -->
+    <div class="sec_1 w-full md:w-1/2 flex flex-col">
+      <h3 class="text-[2rem] font-bold mb-4">Our Main Features</h3>
+      <p class="text-gray-600 mb-6">
+        On her way, she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times, and everything that was left from its origin would be the word.
+      </p>
+      <div class="grid grid-cols-2 gap-4 flex-grow">
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Feature Image 1">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="Feature Image 2">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Feature Image 3">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="Feature Image 4">
+        </div>
+      </div>
+    </div>
+    <!-- Section 2 -->
+    <div class="sec_2 w-full md:w-1/2 bg-gray-100 rounded-lg p-6 border-2 border-blue-300 flex flex-col">
+      <img src="images/main_fea_sec2.jpg" alt="" class="h-auto max-w-full rounded-lg">
+      <h3 class="text-2xl font-bold mb-4 mt-6">Read Our Success Story for Inspiration</h3>
+      <p class="text-gray-600 mb-6">
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.
+      </p>
+      <button class="bg-blue-600 text-md py-4 px-5 mt-auto text-white font-semibold rounded-full hover:bg-white  hover:border border-blue-600 hover:text-blue-500 self-start ">
+        Contact Us
+      </button>
+    </div>
+  </section>
+
+
+
+
+  <section class="bg_img relative my-8">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="images/with_img.webp" alt="bg image" class="w-full h-full object-cover opacity-70" />
+      <div class="absolute inset-0 bg-blue-500 bg-opacity-40"></div>
+    </div>
     
+    <!-- Text in front of the image -->
+    <div class="relative z-10 text-white text-center p-8">
+      <h1 class="text-4xl font-bold mb-4">Your Heading Here</h1>
+      <p class="text-lg">You will always get the best guidance from here..</p>
+    </div>
+  </section>
+
+
+
+  <section class="our_services my-[5rem] px-8">
+    <div class="px-8 my-10  text-center"> <h2 class="text-3xl font-bold my-6">Our Best Services</h2>
+        <span class="text-gray-600 font-normal">Separated they live in. A small river named Duden flows by their place and supplies it with
+             <p class="break-all">the necessary regelialia. It is a paradisematic country</p></span>
+        </div>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 px-4">
+            <!-- First Row -->
+            <div class="bg-white text-blue-500 p-4 rounded-lg hover:bg-blue-500 hover:text-white cursor-pointer shadow-xl duration-300">
+              <h3 class="text-xl font-semibold">Column 1</h3>
+              <p>Content for Column 1</p>
+            </div>
+            <div class="bg-white text-blue-500 p-4 rounded-lg hover:bg-blue-500 hover:text-white cursor-pointer shadow-xl duration-300">
+              <h3 class="text-xl font-semibold">Column 2</h3>
+              <p>Content for Column 2</p>
+            </div>
+            <div class="bg-white text-blue-500 p-4 rounded-lg hover:bg-blue-500 hover:text-white cursor-pointer shadow-xl duration-300">
+              <h3 class="text-xl font-semibold">Column 3</h3>
+              <p>Content for Column 3</p>
+            </div>
+          
+            <!-- Second Row -->
+            <div class="bg-white text-blue-500 p-4 rounded-lg hover:bg-blue-500 hover:text-white cursor-pointer shadow-xl duration-300">
+              <h3 class="text-xl font-semibold">Column 4</h3>
+              <p>Content for Column 4</p>
+            </div>
+            <div class="bg-white text-blue-500 p-4 rounded-lg hover:bg-blue-500 hover:text-white cursor-pointer shadow-xl duration-300">
+              <h3 class="text-xl font-semibold">Column 5</h3>
+              <p>Content for Column 5</p>
+            </div>
+            <div class="bg-white text-blue-500 p-4 rounded-lg hover:bg-blue-500 hover:text-white cursor-pointer shadow-xl duration-300">
+              <h3 class="text-xl font-semibold">Column 6</h3>
+              <p>Content for Column 6</p>
+            </div>
+          </section>
+          
+          
+  </section>
+
+
+  <section class="bg_img relative my-8 py-10">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img src="images/width_img_2.webp" alt="bg image" class="w-full h-full object-cover opacity-70" />
+        <div class="absolute inset-0 bg-blue-500 bg-opacity-40"></div>
+    </div>
+    
+    <!-- Text in front of the image -->
+    <div class="relative w-full z-10 text-white p-8 flex justify-between items-center px-[10rem]">
+        <!-- Left text -->
+        <span class="text-left">
+            <p class="text-2xl font-bold">You Always Get the Best Guidance</p>
+        </span>
+        
+        <!-- Right button -->
+        <span class="text-right">
+            <a class="bg-blue-500 font-bold py-4 px-5 text-white hover:bg-transparent duration-300 hover:border border-white hover:text-white cursor-pointer">
+                See More..
+            </a>
+        </span>
+    </div>
+    
+</section>
+
+
+<section class="recent_projects my-16 px-8">
+    <!-- Header Section -->
+    <div class="px-8 my-10  text-center"> <h2 class="text-3xl font-bold my-6">Our Recent Projects</h2>
+        <span class="text-gray-600 font-normal">Separated they live in. A small river named Duden flows by their place and supplies it with
+             <p class="break-all">the necessary regelialia. It is a paradisematic country</p></span>
+        </div>
+
+    <!-- Grid of Images with Hover Effect -->
+    <div class="grid grid-cols-1 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div class="group relative">
+            <img src="images/rece_img1.jpg" alt="Project 1" class="w-full h-full object-cover rounded-lg transition-all duration-300" />
+            <!-- Overlay & Text -->
+            <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-70 transition-all duration-300 flex justify-center items-center rounded-lg">
+                <p class="text-white font-bold text-xl">Project 1</p>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/rece_img2.jpg" alt="Project 2" class="w-full h-full object-cover rounded-lg transition-all duration-300" />
+            <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-70 transition-all duration-300 flex justify-center items-center rounded-lg">
+                <p class="text-white font-bold text-xl">Project 2</p>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/rece_img3.jpg" alt="Project 3" class="w-full h-full object-cover rounded-lg transition-all duration-300" />
+            <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-70 transition-all duration-300 flex justify-center items-center rounded-lg">
+                <p class="text-white font-bold text-xl">Project 3</p>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/rece_img4.jpg" alt="Project 4" class="w-full h-full object-cover rounded-lg transition-all duration-300" />
+            <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-70 transition-all duration-300 flex justify-center items-center rounded-lg">
+                <p class="text-white font-bold text-xl">Project 4</p>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/rece_img5.webp" alt="Project 5" class="w-full h-full object-cover rounded-lg transition-all duration-300" />
+            <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-70 transition-all duration-300 flex justify-center items-center rounded-lg">
+                <p class="text-white font-bold text-xl">Project 5</p>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/rece_img6.jpg" alt="Project 6" class="w-full h-full object-cover rounded-lg transition-all duration-300" />
+            <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-70 transition-all duration-300 flex justify-center items-center rounded-lg">
+                <p class="text-white font-bold text-xl">Project 6</p>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/rece_img7.jpg" alt="Project 7" class="w-full h-full object-cover rounded-lg transition-all duration-300" />
+            <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-70 transition-all duration-300 flex justify-center items-center rounded-lg">
+                <p class="text-white font-bold text-xl">Project 7</p>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/rece_img6.jpg" alt="Project 8" class="w-full h-full object-cover rounded-lg transition-all duration-300" />
+            <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-70 transition-all duration-300 flex justify-center items-center rounded-lg">
+                <p class="text-white font-bold text-xl">Project 8</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="client_testimonials my-16 px-8">
+    <!-- Header Section -->
+    <div class="px-8 my-10  text-center">
+        <h2 class="text-3xl font-bold my-6">Our Clients Says</h2>
+        <span class="text-gray-600 font-normal">Separated they live in. A small river named Duden flows by their place and supplies it with
+             <p class="break-all">the necessary regelialia. It is a paradisematic country</p></span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- First Column -->
+            <div class="col_1 flex flex-col items-center text-center">
+                <div class="img_1 w-32 h-32 rounded-full overflow-hidden mb-4">
+                    <img src="images/rece_img1.jpg" class="w-full h-full object-cover" alt="Image 1">
+                </div>
+                <div class="text text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt ipsa commodi ut dicta? Neque eius, quidem non esse blanditiis obcaecati libero repellendus facere earum maiores rerum natus. Voluptates, assumenda!
+                </div>
+            </div>
+        
+            <!-- Second Column -->
+            <div class="col_1 flex flex-col items-center text-center">
+                <div class="img_1 w-32 h-32 rounded-full overflow-hidden mb-4">
+                    <img src="images/rece_img2.jpg" class="w-full h-full object-cover" alt="Image 2">
+                </div>
+                <div class="text text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt ipsa commodi ut dicta? Neque eius, quidem non esse blanditiis obcaecati libero repellendus facere earum maiores rerum natus. Voluptates, assumenda!
+                </div>
+            </div>
+        
+            <!-- Third Column -->
+            <div class="col_1 flex flex-col items-center text-center">
+                <div class="img_1 w-32 h-32 rounded-full overflow-hidden mb-4">
+                    <img src="images/rece_img3.jpg" class="w-full h-full object-cover" alt="Image 3">
+                </div>
+                <div class="text text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt ipsa commodi ut dicta? Neque eius, quidem non esse blanditiis obcaecati libero repellendus facere earum maiores rerum natus. Voluptates, assumenda!
+                </div>
+            </div>
+        </div>
+        
+
+</section>
+
+
+
+
+
+
+  
+  
+  
+
+
+
+<footer class="bg-[#232323] text-white py-[4rem] px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Column no 1 -->
+      <div>
+        <h2 class="text-lg font-bold mb-8 ">Have a Question?</h2>
+        <ul class="space-y-8 text-sm">
+          <li class="flex"> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-4">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+          <li class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+              </svg>
+              
+            <span class="ml-4">+92 300 1234567</span></li>
+          <li class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+              </svg>              
+            <span class="ml-4">info@yourdomain.com</span></li>
+        </ul>
+      </div>
+      <!-- Column no 2 -->
+      <div>
+        <h2 class="text-lg font-bold mb-8">Our Blog</h2>
+        <ul class="space-y-[4rem] text-sm">
+          <li>
+            <div class="flex items-center gap-2">
+              <div class="w-[10rem] h-[4rem]">
+                <img src="images/pic_foot.png" alt="" width="400" height="400">
+              </div>
+              <span class="ml-3">Even the all-powerful Pointing has no control about
+                <input type="date" name="" id="" class="text-black">
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex items-center gap-2">
+              <div class="w-[10rem] h-[4rem]">
+                <img src="images/pic_foot2.png" alt="" width="400" height="400">
+              </div>
+              <span class="ml-3">Even the all-powerful Pointing has no control about
+                <input type="date" name="" id="" class="text-black">
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Column 3 -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Links</h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Services</a></li>
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+          <li><a href="#" class="hover:underline">Members</a></li>
+        </ul>
+      </div>
+      <!-- Column 4 -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Subscribe Us!</h2>
+        <form class="flex flex-col space-y-3 text-sm">
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="px-3 py-2 bg-gray-800 text-white border border-gray-600 rounded"/>
+          <a href="#"
+            class="bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600 transition">
+            Subscribe
+          </a>
+          <div>
+            <span class="text-gray-200 text-xl font-bold mt-4">Connect With Us
+              </span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </footer>
+  <div class="footer_last bg-[#232323] text-white py-4 font-semibold text-md md:px-12 justify-center text-center">@copy Team invincibles 2024-2025</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.getElementById('nav-menu');
@@ -89,6 +471,10 @@
         menuToggle.addEventListener('click', () => {
             navMenu.classList.toggle('hidden');
         });
+
+
+
+        
     </script>
 </body>
 </html>
