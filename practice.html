@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word-by-Word Animation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#text-container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+</style>
+<body>
+  <div id="text-container"></div>
+
+
+  <script>
+const text = "Welcome to our nextwave service provider company for a modern and digital future!";
+const textContainer = document.getElementById("text-container");
+
+const words = text.split(" ");
+
+let index = 0;
+function displayWord() {
+  if (index < words.length) {
+    textContainer.innerHTML += words[index] + " ";
+    index++;
+    setTimeout(displayWord, 300); //for speed adjustment
+  }
+}
+window.onload = displayWord;
+
+  </script>
+</body>
+</html>
