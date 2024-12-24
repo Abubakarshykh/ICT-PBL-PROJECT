@@ -3,72 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .dropbtn {
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            background: none;
-            cursor: pointer;
-            text-align: left; /* Align text */
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Navbar links */
-        nav ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            list-style: none;
-        }
-
-        nav ul li a {
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        nav ul li a:hover {
-            color: #74c7d4;
-        }
-
-    </style>
 </head>
 <body>
     <header class="bg-white border-b shadow-sm">
@@ -100,17 +34,21 @@
     <nav class="bg-gray-800">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <ul class="flex space-x-8 text-white">
-                <li><a href="Home.html" class="hover:text-[#74c7d4]">Home</a></li>
+                <li><a href="#home" class="hover:text-[#74c7d4]">Home</a></li>
                 <li><a href="#services" class="hover:text-[#74c7d4]">Services</a></li>
-                <li><a href="aboutus.html" class="hover:text-[#74c7d4]">About Us</a></li>
-                <li><a href="Contact.html" class="hover:text-[#74c7d4]">Contact Us</a></li>
-                <li class="dropdown">
-                    <button class="dropbtn hover:text-[#74c7d4] rounded-xl">Team Members</button>
-                    <div class="dropdown-content">
-                        <a href="#">Eesa khurram</a>
-                        <a href="#">Isra Saad</a>
-                        <a href="#">Samia Rehman</a>
-                        <a href="#">M.Abubakar</a>
+                <li><a href="#about-us" class="hover:text-[#74c7d4]">About Us</a></li>
+                <li><a href="#contact-us" class="hover:text-[#74c7d4]">Contact Us</a></li>
+                <li class="relative">
+                    <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="hover:text-[#74c7d4]">
+                        Our Team
+                    </button>
+                    <div id="dropdownHover" class="hidden z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44">
+                        <ul class="py-2 text-gray-700">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Abubakar</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Eesa Khurram</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Isra Saad</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Samia Rehman</a></li>
+                        </ul>
                     </div>
                 </li>
             </ul>
