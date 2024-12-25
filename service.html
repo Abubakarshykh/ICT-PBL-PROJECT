@@ -3,40 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Services</title>
+    <title>Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send" />
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f7fafc;
-            margin: 0;
             padding: 0;
-        }
-
-        /* Navbar */
-        #navbar {
-            background-color: #0e7e8f; /* Consistent brand color */
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #navbar .logo {
-            font-size: 24px;
-            color: white;
-            font-weight: bold;
-        }
-
-        #navbar a {
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-
-        #navbar a:hover {
-            background-color: #74c7d4;
-            border-radius: 5px;
+            margin: 0;
         }
 
         /* Search bar */
@@ -90,12 +66,6 @@
             font-weight: bold;
         }
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
         /* Service Sections */
         .service-section {
             margin-bottom: 40px;
@@ -113,72 +83,22 @@
             line-height: 1.6;
         }
 
-        /* Button */
-        .button {
-            background-color: #0e7e8f;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .button:hover {
-            background-color: #74c7d4;
-        }
-
         /* Contact Section */
         .contact-info {
             margin-top: 20px;
             font-size: 16px;
         }
-
         .contact-info img {
             width: 20px;
             height: 20px;
-            margin-right: 10px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0e7e8f;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer .social-links a {
-            background-color: #0e7e8f;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer .social-links a:hover {
-            background-color: #063840;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div id="navbar">
-        <div class="logo">SEO Services</div>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">SEO Services</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
-        </div>
-    </div>
-
+    
+    <div id="navbar"></div>
     <!-- Hero Section -->
     <div class="hero">
         <div class="hero-overlay"></div>
@@ -223,16 +143,22 @@
 <img src="C:/Users/Wizzy/Documents/GitHub/ICT-PBL-PROJECT/images/paisa.png" alt="picture"width="200"height="200">
 
     <!-- Footer -->
-    <footer>
-        <p>Stay Connected</p>
-        <p>Follow us on social media for updates, news, and offers!</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-        </div>
-        <p>© 2024 SEO Services. All rights reserved.</p>
-    </footer>
+   <div id="footer"></div>
+
+   <script>
+
+fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+            // footer
+         fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+   </script>
     
 
 </body>
