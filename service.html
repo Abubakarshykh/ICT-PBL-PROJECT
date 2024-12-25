@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send" />
     <style>
         body {
-            font-family: 'Arial', sans-serif;
             background-color: #f7fafc;
             padding: 0;
             margin: 0;
@@ -57,8 +56,6 @@
 
         h2 {
             font-size: 2.5rem;
-            text-align: center;
-            color: #2d3748;
             margin-bottom: 40px;
             text-transform: uppercase;
         }
@@ -74,13 +71,11 @@
         .service-header {
             font-size: 1.75rem;
             font-weight: bold;
-            color: #2d3748;
             margin-bottom: 10px;
         }
 
         .service-description {
             font-size: 1rem;
-            color: #4a5568;
             line-height: 1.8;
         }
 
@@ -106,26 +101,6 @@
         .button:hover {
             background-color: #0e7e8f;
         }
-
-        /* Footer Section */
-        #footer {
-            background-color: #2d3748;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 1rem;
-            margin-top: 40px;
-        }
-
-        #footer a {
-            color: #74c7d4;
-            text-decoration: none;
-        }
-
-        #footer a:hover {
-            text-decoration: underline;
-        }
-
         /* Image Section */
         .image-section {
             text-align: center;
@@ -194,49 +169,17 @@
     </div>
 
     <!-- Image Section -->
-    <div class="image-section">
-        <img src="images/google.png" alt="pics" width="300" height="200">
+    <div class="image-section gap-x-6 px-10 py-10">
+        <img src="images/s_1.jpg" alt="pics" width="300" height="200">
          
-        <img src="images/shopify.jpeg" alt="pics" width="300" height="200">
+        <img src="images/s_2.jpeg" alt="pics" width="300" height="200">
 
-        <img src="images/slidep2.png" alt="pics" width="300" height="200">
+        <img src="images/s_3.jpeg" alt="pics" width="300" height="200">
 
     </div>
 
     <!-- Footer -->
-    <div id="footer">
-        <footer class="flex justify-between items-center p-6 bg-white-200 border-t border-white-300">
-            <div class="container mx-auto flex flex-wrap py-12 px-6">
-                <div class="grid">
-                    <div class="w-1/2 text-left">
-                        <p class="text-gray-700">
-                            Thank you for visiting our website! We hope you found what you were looking for. Stay connected with us through our social media channels for the latest updates and news.
-                        </p>
-                    </div>
-                    <div class="py-10">
-                        <button class="bg-[#0e7e8f] text-white px-6 py-2 rounded hover:text-[#74c7d4]">
-                            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                        </button>
-                        <button class="bg-[#0e7e8f] text-white px-6 py-2 rounded hover:text-[#74c7d4]">
-                            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full">
-                <div class="container mx-auto flex flex-wrap py-12 px-6">
-                    <div class="w-1/2 text-left">
-                        <p class="text-gray-700"><img src="assets/navigation.png" class="w-10 h-10"><b>Location</b><br> 123 Main St, Anytown, USA</p>
-                    </div>
-                    <div class="w-1/2">
-                        <p class="text-gray-700"><img src="assets/phone.png" class="w-10 h-10"><b>Contact</b><br> +1 253 565 2365<br> support@colorlib.com</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
+     <div id="footer"></div>
     <script>
         fetch('navbar.html')
             .then(response => response.text())
